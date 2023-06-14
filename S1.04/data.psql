@@ -1,0 +1,48 @@
+DROP TABLE module;
+DROP TABLE evaluation;
+DROP TABLE personne;
+DROP TABLE etudiant;
+DROP TABLE enseignant;
+
+
+CREATE TABLE imp 
+( 
+	id_enseignant integer, 
+	nom_enseignant character varying, 
+	prenom_enseignant character varying, 
+	id_module integer, 
+	code character varying,
+	ue character varying,
+	intitule_module character varying, 
+	nom_evaluation character varying, 
+	date_evaluation date, note numeric, 
+	id_etudiant integer, 
+	nom_etudiant character varying, 
+	prenom_etudiant character varying 
+);
+
+COPY imp FROM 'C:\Program Files\PostgreSQL\15\scripts\data.csv' DELIMITER ';' CSV Header;
+
+CREATE TABLE enseignant(id_enseignant integer NOT NULL)
+INSERT INTO enseignant(id_enseignant) SELECT id_enseignant FROM imp;
+
+CREATE TABLE etudiant(id_etudiant integer NOT NULL)
+INSERT INTO etudiant(id_etudiant) SELECT id_etudiant FROM imp;
+
+CREATE TABLE personne(id_personne integer, nom VARCHAR, prenom VARCHAR)
+INSERT INTO personne(id_personne, nom, prenom) SELECT id_etudiant, nom_etudiant, prenom_etudiant FROM imp;
+INSERT INTO personne(id_personne, nom, prenom) SELECT id_enseignant, nom_enseignant, prenom_enseignant FROM imp;
+
+CREATE TABLE evaluation(nom_evaluation VARCHAR, date_evaluation DATE)
+INSERT INTO evaluation(nom_evaluation, date_evaluation) SELECT nom_evaluation, date_evaluation FROM imp;
+
+CREATE TABLE module
+(
+    id_module integer NOT NULL,
+    intitule_module character varying,
+    code character varying,
+    ue character varying,
+    responsable character varying
+)
+
+INSERT INTO module (id_module, intitule_module, code, ue, responsable) SELECT id_module,intitule_module,code,ue,id_enseignant FROM imp;

@@ -1,0 +1,20 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.lien_vers {
+    margin-right: 25px;
+}
+
+a:link 
+{ 
+ text-decoration:none; 
+ margin-left: 25px;
+} 
+
+a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+

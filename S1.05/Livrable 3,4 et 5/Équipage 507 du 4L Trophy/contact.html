@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Équipage 507 du 4L Trophy</title>
+    <link rel="stylesheet" href="public/css/header.css">
+    <link rel="stylesheet" href="public/css/base.css">
+    <link rel="stylesheet" href="public/css/body.css">
+    <link rel="stylesheet" href="public/css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<!--Source utiliser pour faire le formulaire de donation et contatct
+https://www.codeur.com/tuto/html/creer-formulaire-html/#:~:text=Un%20formulaire%20se%20déclare%20avec,bouton%20de%20validation%20du%20formulaire.
+-->
+<header>    
+    <div class="titre">
+        <h1>Équipage 507 du 4L Trophy</h1>
+    </div>
+    <div class="header">
+        <div class="header__navbar">
+            <div class="header__navbar--menu">
+                <a href="accueil.html" class="header__navbar--menu-link">Accueil</a>
+                <a href="actualite.html" class="header__navbar--menu-link">Actualités</a>
+                <a href="donation.html" class="header__navbar--menu-link">Donation</a>
+                <a href="sponsor.html" class="header__navbar--menu-link">Sponsors</a>
+                <a href="forum.html" class="header__navbar--menu-link">Forum</a>
+                <a href="contact.html" class="header__navbar--menu-link">Contacter</a>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="contactez-nous">
+        <h1>Contactez-nous</h1>
+        <p>Un problème, une question, envie de nous envoyer un message ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !</p>
+        <form action="/page-traitement-donnees" method="post">
+        <div>
+        <label for="nom">Votre nom</label>
+        <input type="text" id="nom" name="nom" placeholder="Martin" required>
+        </div>
+        <div>
+        <label for="email">Votre e-mail</label>
+        <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+        </div>
+        <div>
+        <label for="sujet">Quel est le sujet de votre message ?</label>
+        <select name="sujet" id="sujet" required>
+        <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+        <option value="probleme-compte">Problème avec de donation</option>
+        <option value="question-produit">Question à propos du forum</option>
+        <option value="suivi-commande">J'aimerais sponsoriser votre équipe</option>
+        <option value="autre">Autre...</option>
+        </select>
+        </div>
+        <div>
+        <label for="message">Votre message</label>
+        <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+        </div>
+        <div>
+        <button type="submit">Envoyer mon message</button>
+        </div>
+        </form>
+        </div>
+</body>
+<hr>
+<footer class="footer__site">
+    <h3>
+        <p class="footer__texte">
+            Équipage 507 du 4L Trophy 
+        </p>
+        <small>
+            <a class="lien_vers" href="">Page de l'équipe Principale</a>
+        </small><br>
+        <small><small><p>© 2022 par Équipage 507 du 4L Trophy.</p></small></small>
+    </h3>
+</footer>
+</html>

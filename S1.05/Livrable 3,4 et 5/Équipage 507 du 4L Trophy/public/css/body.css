@@ -1,0 +1,245 @@
+.titre_body {
+    text-align: center;
+    margin-right: 5%;
+    color: rgb(58, 71, 146);
+    text-align: left;
+}
+
+h1 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.texte_body {
+    text-align: justify;
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 40%;
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(0, 110, 255);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: rgba(200, 255, 255, 1);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.acu {
+    margin-top: 1px;
+    background-color: #e45c1b;
+}
+
+.forum__entete {
+    margin-top: 1px;
+    background-color: #e45c1b;
+}
+
+.a111aaa {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.a111aaab {
+    text-align: center;
+}
+
+
+.title__acu_1 {
+    margin-right: 150px;
+    margin-top: 100px;
+    font-size: large;
+}
+.donation {
+    width: 700px;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 0px 50px 0 50px;
+    background-color: #e45c1b;
+    margin-top: 2px;
+    margin-left: 18%;
+    text-align: center;
+}
+.contactez-nous {
+    width: 700px;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 0px 50px 0 50px;
+    background-color: #e45c1b;
+
+    margin-top: 2px;
+    margin-left: 18%;
+    text-align: center;
+    }
+
+.contactez-nous > h1 {
+    font-weight: 500;
+}
+
+.contactez-nous > p {
+    font-weight: 300;
+}
+
+form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 83px;
+    margin-top: 25px;
+}
+
+form div > label {
+    margin-bottom: 7px;
+    font-weight: 600;
+
+}
+
+form div > input, form div > select, form div > textarea {
+    background: #e9830fa9;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Montserrat, "sans-serif";
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
+}
+
+form div > input, form div > select {
+    height: 50px;
+    padding-left: 10px;
+
+}
+
+
+form div > textarea {
+    height: 195px;
+    padding: 15px 0px 0px 10px;
+}
+
+form div > input::placeholder, form div > textarea::placeholder {
+    color: white;
+}
+
+form div > select:invalid {
+    color: white;
+}
+
+form div > select option {
+    background: white;
+    color: #303030;
+}
+    
+form div:last-child {
+    align-items:center;
+    margin-top: 20px;
+}
+
+form button {
+    width: 450px;
+    max-width: 500px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 28px;
+    background: white;
+    border: rgba(48, 48, 48, 0.5) solid 1px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    color: #303030;
+}
+
+
+.bouton {
+    margin-top: 5px;
+    margin-right: 150px;
+    text-align: right;
+}
+
+.img-forum {
+    margin-left: 10%;
+}
+
+.img-forum1 {
+    margin-top: 50px;
+    margin-left: 11%;
+}
+
+
+.title__spons {
+    text-align: center;
+}
+
+.sponso--texte {
+    text-align: center;
+}
+
+.logo-enfant {
+    height: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a221da12 {
+    text-align: center;
+}
+
+
+.rallye {
+    margin-left: 100px;
+    margin-top: 50px;
+    text-align: justify;
+    
+}
+
+.raylle-texte {
+    margin-left: 170px;
+}
+
+.Trophy {
+    border: 0;
+    margin-top: 151px;
+    margin-left: 150px;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(228, 208, 28);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.Trophy:hover {
+    background-color: rgb(194, 192, 81);
+}
+
+.Trophy:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
